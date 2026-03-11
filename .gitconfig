@@ -44,3 +44,6 @@
 	conflictstyle = zdiff3
 [pull]
 	rebase = true
+[alias]
+	new-branch = "!f() { git checkout -b \"egor.$(date +%y%m%d).$1\"; }; f"
+	nuke = !git reset --hard HEAD && git clean -fd
