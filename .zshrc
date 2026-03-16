@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Egor/.oh-my-zsh
+export ZSH=/Users/egor/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -91,6 +91,8 @@ alias ohmyzsh="nano ~/.oh-my-zsh"
 
 alias gw="./gradlew"
 
+alias gswl="git switch -"
+
 alias be="bundle exec"
 
 alias brup="brew update"
@@ -118,7 +120,7 @@ export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export ANDROID_HOME="/Users/Egor/Library/Android/sdk"
+export ANDROID_HOME="/Users/egor/Library/Android/sdk"
 export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
@@ -127,3 +129,7 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 eval "$(rbenv init - zsh)"
 
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
